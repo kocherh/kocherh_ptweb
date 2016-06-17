@@ -1,0 +1,182 @@
+.wrapper
+{
+    margin: 0 auto;
+    width: 960px;
+    padding-right: 1em;
+    text-align: center;
+    
+}
+
+.row:after
+{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/**
+
+AVEC MARGIN
+
+.col1
+{
+    background-color: red;
+    float: left;
+    width: calc((100% - 7 * 8px) / 6);
+    margin: 8px 0px 0px 8px;
+}
+
+.col2
+{
+    background-color: coral;
+      float: left;
+    width: calc((100% - 4 * 8px) / 3);
+     margin: 8px 0px 0px 8px;
+}
+
+.col3
+{
+    background-color:orange;
+      float: left;
+    width: calc((100% - 5 * 8px )/ 2);
+     margin: 8px 0px 0px 8px;
+}
+
+.col4
+{
+    background-color:orangered;
+    float: left;
+    width: calc((100% - 3 * 8px ) / 6 * 4);
+     margin: 8px 0px 0px 8px;
+}
+
+.col5
+{
+    background-color: darkorange;
+ float: left;
+    width: calc((100% - 3 * 8px) / 6 * 5);
+     margin: 8px 0px 0px 8px;
+}
+
+.col6
+{
+    background-color: yellow;
+    margin: 8px 0px 8px 8px;
+    width: calc(100% - 2 * 8px);
+}
+
+/**AVEC PADDING*/
+/**
+.colg1
+{
+
+    float: left;
+    width: calc(((100% - 1em) / 6) - 1em);
+    margin: 1em 0 0 1em;
+}
+
+.colg2
+{
+
+      float: left;
+    width: calc(((100% - 1em) / 3) - 1em);
+     margin: 1em 0 0 1em;
+}
+
+.colg3
+{
+
+      float: left;
+    width: calc(((100% - 1em) / 2) - 1em);
+     margin: 1em 0 0 1em;
+}
+
+.colg4
+{
+
+    float: left;
+    width: calc(((100% - 1em) / 6* 4 ) - 1em);
+     margin: 1em 0 0 1em;
+}
+
+.colg5
+{
+
+ float: left;
+    width: calc(((100% - 1em) / 6 * 5) - 1em);
+     margin: 1em 0 0 1em;
+}
+
+.colg6
+{
+
+    margin: 1em 0 1em 1em;
+    width: calc((100% - 1em) - 1em);
+}*/
+
+.col1
+{
+
+    float: left;
+    width: calc(100% / 6);
+}
+
+.col2
+{
+
+      float: left;
+    width: calc(100% / 3);
+}
+
+.col3
+{
+ 
+      float: left;
+    width: calc(100% / 2);
+}
+
+.col4
+{
+
+    float: left;
+    width: calc(100% / 6* 4 );
+}
+
+.col5
+{
+
+ float: left;
+    width: calc(100% / 6 * 5) ;
+}
+
+.col6
+{
+
+    width: calc(100% );
+}**/
+
+@media(max-width : 800px)
+{
+    .wrapper {
+        width: 100%;
+    }
+    .col1{
+        width: calc (100% / 3);
+    }
+    .col2
+    {
+        width: calc ( 100% / 2);
+    }
+    .col3, .col4, .col5, .col6
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width : 400px)
+{
+    .col1, .col2, .col3
+    {
+        width: 100%;
+    }
+}
