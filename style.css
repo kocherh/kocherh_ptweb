@@ -4,8 +4,9 @@ body
 {
     font-family: 'Raleway', sans-serif;
     width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
+
 }
 
 /*  Header  */
@@ -13,7 +14,7 @@ body
 { 
     width: 100%;
     height: 1000px;
-    background: url(/image/WANNER_Cindelle.jpg) no-repeat center fixed; 
+    background: url(/image/WANNER_Cindelle.jpg);
     background-size: cover;
     
 }
@@ -23,29 +24,32 @@ body
     color: white;
     float: right;
     background: rgba(131 ,119, 137,0.7);
-    padding: 400px 25px 366px 25px;
-    margin-top: 0px;
+    padding: 400px 15px 376px 15px;
+    margin-top: -10px;
 }
 
-section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-size: 30px;position: }
-
-.col2 h2
+section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-size: 35px;}
+.profil  h1
+{
+    text-align: right;
+}
+h2
 {
     color: rgb(131 ,119, 137);
     font-size: 30px;
-    float: left;
 }
 .col2 p
 {
     float: left;
     text-align: justify;
     line-height: normal;
+    width: 400px;
 }
 /*  Menu  */
 
 #op-horizontalnav {background:#fff; position:fixed; top:0; right:0; left:0;z-index: 1;display: block;}
 #op-horizontalnav .op-sectionlist {width:100%; max-width:1280px; margin:auto;padding:0; text-align:center; display:table;}
-#op-horizontalnav .op-v-item {list-style:none; display:table-cell; font-size:20px;}
+#op-horizontalnav .op-v-item {list-style:none; display:table-cell;font-size:20px;}
 #op-horizontalnav .op-v-item .op-v-link {color:rgb(131 ,119, 137); padding:16px 8px;display:block;text-decoration:none;}
 #op-horizontalnav .op-v-item .op-v-link:hover, #op-horizontalnav .op-v-link.active {background-color:rgb(131 ,119, 137);color:#fff;}
 
@@ -57,66 +61,25 @@ section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-s
     width: 250px;
     height: 250px;
     background-size: cover;
-    display: block;
-    float: right;}
-    
-    /*  Effet de rebond 
-    background-repeat: no-repeat;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-                -webkit-animation-name: bounceInRight;
-            animation-name: bounceInRight;
-    
+    margin-top: 10px;
+    margin-left: 250px;
+    margin-right: auto;
 }
-         
-         @-webkit-keyframes bounceInRight {
-            0% {
-               opacity: 0;
-               -webkit-transform: translateX(2000px);
-            }
-            60% {
-               opacity: 1;
-               -webkit-transform: translateX(-30px);
-            }
-            80% {
-               -webkit-transform: translateX(10px);
-            }
-            100% {
-               -webkit-transform: translateX(0);
-            }
-         }
-         
-         @keyframes bounceInRight {
-            0% {
-               opacity: 0;
-               transform: translateX(2000px);
-            }
-            60% {
-               opacity: 1;
-               transform: translateX(-30px);
-            }
-            80% {
-               transform: translateX(10px);
-            }
-            100% {
-               transform: translateX(0);
-            }
-         }*/
 
     /*  Text  */
 .profil
 {
-    height: 480px;
+    height:530px;
      background-color: rgb(252, 251, 253);  
-    display: block;
 }
 
 .sectprof
 {
-    margin-top: 2%;
-    margin-left: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    width: 960px;
+    
 }
 
     /*  Bouton téléchargement CV   */
@@ -127,8 +90,8 @@ section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-s
     width: 30px;
     height: 25px;
     background-size: cover;
-    float: left;
-    margin-left: -10px;
+    margin-left: 20px;
+    margin-bottom: 2px;
 }
 .tele p
 {
@@ -137,13 +100,28 @@ section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-s
     margin-top: 5px;
     color: black;
 }
-.téléchargement
+.telechargement
 {
-    width: 60%;
+    width: 250px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    padding: 10px 0 10px 0
+}
+.telechargement a
+{
+    text-decoration: none;
 }
 
 /*  Parcours  */
-
+.ecole
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    height: 500px;
+}
 .parcours
 {
     background-color: rgb(182 , 165, 189);
@@ -163,29 +141,31 @@ section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-s
 }
 .trait
 {
-    position: absolute;
     height: 450px;
-     border : 2px rgb(131 ,119, 137) solid;
-    left: 50%;
+    width: 0px;
+    border : 2px rgb(131 ,119, 137) solid;
     margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .dut 
 {
     border : 2px rgb(131 ,119, 137) solid;
     width: 400px;
-    position: absolute;
-    left: 21%;
     top: 60%;
     background: rgba(131 ,119, 137,0.3);
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    margin-top: -200px
 }
 .bac
 {
     border : 2px rgb(131 ,119, 137) solid;
     width: 400px;
-    position: absolute;
-    left: 55%;
     top: 20%;
     background: rgba(131 ,119, 137,0.3);
+    float: right;
 }
 
 /*  Competence  */
@@ -197,30 +177,43 @@ section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-s
     position: relative;
     display: block;
 }
+.savoir
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    height: 500px;
+}
 
 .comp
 {
-    width: 70%;
-    margin-left: 23%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 3%;
+    width: 960px;
+    text-align: center;
 }
 .comp p 
 {
     text-align: center;
-    margin-top: 110%; 
+    margin-top: 110%;
+    width: 150px;
 }
 .bas
 {
-    width: 65%;
     position: absolute;
     top: 350px;
-    left: 36.5%
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    padding-left: 90px;
 
 }
 .bas p
 {
     text-align: center;
     margin-top: 110%;
+    width: 150px;
 
 }
 .comm
@@ -229,17 +222,17 @@ section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-s
     width: 150px;
     height: 150px;
     background-size: cover;
-    float: left;
-    margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .ref
 {
-        background-image: url(image/referencement-03.png);
+    background-image: url(image/referencement-03.png);
     width: 150px;
     height: 150px;
     background-size: cover;
-    float: left;
-    margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .grap
 {
@@ -247,8 +240,8 @@ section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-s
     width: 150px;
     height: 150px;
     background-size: cover;
-    float: left;
-    margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .html
 {
@@ -256,8 +249,9 @@ section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-s
     width: 150px;
     height: 150px;
     background-size: cover;
-    float: left;
-     margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
 }
 .prj
 {
@@ -265,8 +259,9 @@ section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-s
     width: 150px;
     height: 150px;
     background-size: cover;
-    float: left;
-     margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
 }
 
 /*  Portfolio  */
@@ -280,9 +275,11 @@ section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-s
 
 .port
 {
-    width: 1200px;
-    margin-left: 17%;
-    margin-top: 2%
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    text-align: center;
+    margin-top: 2%;
 }
 
 /* Effet sur les images du portfolio */
@@ -293,48 +290,49 @@ section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-s
 	position: relative;
 	cursor: default;
 	box-shadow: 
-		inset 0 0 0 16px rgba(255,255,255,0.6),
+inset 0 0 0 16px rgba(255,255,255,0.6),
 		0 1px 2px rgba(0,0,0,0.1);
 	transition: all 0.25s ease-in-out;
     margin-top: 5%;
     float: left;
     margin-right: 100px;
+    cursor: pointer;
 }
 
 .ch-img-1 { 
 	background-image:url(telechargemnt/ART2_KOCHER_Helene_Porte_ouverte-02-01.png);
     height: 300px;
-    width: 500px;
+    width: 450px;
 
 }
 .ch-img-2 { 
 	background-image:url(telechargemnt/CREA1_TP2_KOCHER-02.png);
     height: 300px;
-    width: 500px;
+    width: 450px;
   
 }
 .ch-img-3 { 
 	background-image:url(telechargemnt/museum_week_KOCHER_H%C3%A9l%C3%A8ne-03.PNG);
     height: 300px;
-    width: 500px;
+    width: 450px;
     content: cover;
 }
 .ch-img-4 { 
 	background-image:url(telechargemnt/logo_final_fablab_cs5-01.png);
     height: 300px;
-    width: 500px;
+    width: 450px;
 
 }
 .ch-img-5 { 
 	background-image:url(telechargemnt/maquette_site_Kocher_Helene-04.png);
     height: 300px;
-    width: 500px;
+    width: 450px;
     content: cover;
 }
 .ch-img-6 { 
 	background-image:url(telechargemnt/picto_Kocher_Helene-05.png);
     height: 300px;
-    width: 500px;
+    width: 450px;
     content: cover;
 }
 
@@ -459,11 +457,12 @@ button
 .contact
 {
     height: auto;
+    margin: 0 auto;
 }
 .coordonee
 {
     float: left;
-    margin-left: -100px;
+    
 }
 .coordonee p
 {
@@ -472,6 +471,7 @@ button
     margin-top: -4px;
     text-align: left;
     margin-left: 5px;
+    
 }
 .coord
 {
@@ -532,17 +532,26 @@ button
     display: none;
 }
 
-@media (max-width: 400px)
+@media(max-width: 400px)
 {
-    nav ul
+    body
+    {
+        width: 400px;
+    }
+    .nav ul
     {
         height: 0;
         overflow: hidden;
         transition: height 0.5s;
     }
+#op-horizontalnav {display: block;}
+#op-horizontalnav .op-sectionlist {display:table;}
+#op-horizontalnav .op-v-item {display:list-item;}
+#op-horizontalnav .op-v-item .op-v-link {display:block;}
     nav ul.open
     {
         height: 12em;
+        
     }
     header h1
     {
@@ -556,5 +565,175 @@ button
         display: block;
         text-align: center;
         text-decoration: none;
+    }
+    .one p
+    {
+        width: 380px;
+        font-size: 35px;
+        padding: 214px 15px 214px 15px;
+        
+    }
+    .one
+    {
+        height: 500px;
+    }
+    .col2 p
+    {
+        padding: 0 5px 0 5px;
+        width: 360px;
+    }
+    .sectprof
+    {
+        width: 400px
+    }
+    h2
+    {
+        margin-left: 70px;
+        width: 260px;
+    }
+    .telechargement
+    {
+        margin-left: 50px;
+        margin-top: 350px;
+    }
+    .moi
+    {
+       display: none;   
+    }
+    .profil
+    {
+        height: 600px;
+    }
+    .portfolio
+    {
+        height: 1420px;
+    }
+    .ch-img-1
+    {
+        width: 340px;
+        height: 200px;
+        margin-left: 23px;
+        margin-right: auto;
+    }
+        .ch-img-2
+    {
+        width: 340px;
+        height: 200px;
+        margin-left: 23px;
+        margin-right: auto;
+    }
+        .ch-img-3
+    {
+        width: 340px;
+        height: 200px;
+        margin-left: 23px;
+        margin-right: auto;
+    }
+        .ch-img-4
+    {
+        width: 340px;
+        height: 200px;
+        margin-left: 23px;
+        margin-right: auto;
+    }
+        .ch-img-5
+    {
+        width: 340px;
+        height: 200px;
+        margin-left: 23px;
+        margin-right: auto;
+    }
+        .ch-img-6
+    {
+        width: 340px;
+        height: 200px;
+        margin-left: 23px;
+        margin-right: auto;
+    }
+    .competence
+    {
+        height: 1300px;
+    }
+    .comp
+    {
+        width: 300px;
+        float: left;
+        margin-left: 50px;
+    }
+    .comp p
+    {
+        width: 150px;
+    }
+    .bas
+    {
+        width: 300px;
+        float: left;
+        margin-left: -75px;
+        margin-top: 480px;
+    }
+    .prj
+    {
+        margin-top: 70px;
+    }
+    .bas p 
+    {
+        width: 150px;
+    }
+    .coordonee
+    {
+        margin-left: 90px;
+    }
+    .coordonee p
+    {
+        width: 200px;
+    }
+
+    .form-control
+    {
+        margin-left: -40px
+    }
+    button
+    {
+        margin-left: -40px;
+    }
+    .ch-info h3
+    {
+            padding: 20px;
+    }
+    .dut
+    {
+        float: left;
+        margin-top: -20px;
+        width: 320px;
+        position: absolute;
+        margin-left: 30px;
+    }
+    .bac
+    {
+        float: left;
+        width: 320px;
+        position: absolute;
+        margin-left: 30px;
+        margin-top: -50px
+    }
+    .ecole
+    {
+        width: 400px;
+    }
+    .trait
+    {
+        display: none;
+    }
+    .parcours h2
+    {
+        margin-left: 30px;
+    }
+    .savoir
+    {
+        width: 400px;
+    }
+    .port
+    {
+        width: 400px;
     }
 }
