@@ -86,6 +86,31 @@ h2
     background-color:rgb(131 ,119, 137);
     color:#fff;
 }
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 400px) {
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+
+    .slicknav_menu
+    {
+    position:fixed; 
+    top:0; right:0; 
+    left:0;
+    z-index: 1;
+    display:inline-flex;
+
+
+    
+    }
+}
 
 /********************************************************  Profil  ******************************************************************/
    
@@ -603,7 +628,6 @@ button
         width: 380px;
         font-size: 35px;
         padding: 214px 15px 214px 15px;
-        margin-top: -75px; 
     }
     .one
     {
@@ -611,7 +635,8 @@ button
     }
     .col2 p
     {
-        padding: 0 5px 0 5px;
+        margin-left: 20px;
+        margin-right: 10px;
         width: 360px;
     }
     .sectprof
@@ -625,7 +650,7 @@ button
     }
     .telechargement
     {
-        margin-left: 50px;
+        margin-left: 70px;
         margin-top: 350px;
     }
     .moi
@@ -644,42 +669,42 @@ button
     {
         width: 340px;
         height: 200px;
-        margin-left: 23px;
+        margin-left: 30px;
         margin-right: auto;
     }
         .ch-img-2
     {
         width: 340px;
         height: 200px;
-        margin-left: 23px;
+        margin-left: 30px;
         margin-right: auto;
     }
         .ch-img-3
     {
         width: 340px;
         height: 200px;
-        margin-left: 23px;
+        margin-left: 30px;
         margin-right: auto;
     }
         .ch-img-4
     {
         width: 340px;
         height: 200px;
-        margin-left: 23px;
+        margin-left: 30px;
         margin-right: auto;
     }
         .ch-img-5
     {
         width: 340px;
         height: 200px;
-        margin-left: 23px;
+        margin-left: 30px;
         margin-right: auto;
     }
         .ch-img-6
     {
         width: 340px;
         height: 200px;
-        margin-left: 23px;
+        margin-left: 30px;
         margin-right: auto;
     }
     .competence
@@ -738,14 +763,14 @@ button
         margin-top: -20px;
         width: 320px;
         position: absolute;
-        margin-left: 30px;
+        margin-left: 38px;
     }
     .bac
     {
         float: left;
         width: 320px;
         position: absolute;
-        margin-left: 30px;
+        margin-left: 38px;
         margin-top: -50px
     }
     .ecole

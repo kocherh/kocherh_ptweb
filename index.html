@@ -6,14 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="grille.css" >
         <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/slicknav.scss">
+    <link rel="stylesheet" href="/dist/slicknav.css">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   </head>
 
     <header>
     <body>
-        
-        <nav>
+<nav>
             <div id="op-horizontalnav">
-                <ul id="menu" class="op-sectionlist row">
+                <ul id="menu" class="menu op-sectionlist row">
                     <li class="op-v-item"><a class="op-v-link" href="#profil">Profil</a></li>
                     <li class="op-v-item"><a class="op-v-link" href="#parcours">Parcours</a></li>
                     <li class="op-v-item"><a class="op-v-link" href="#competence">Compétences</a></li>
@@ -22,6 +24,13 @@
                 </ul>
             </div>
         </nav>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="./dist/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>          
 </header>
     
         
