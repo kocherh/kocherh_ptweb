@@ -6,6 +6,8 @@
     <meta name="viewport" content="initial-scale=1.0" />
     <link rel="stylesheet" href="grille.css" >
     <link rel="stylesheet" href="style.css" >
+        <script src="./JS/jquery-2.2.3.min.js"></script>
+    <script src="./JS/main.js"></script>
     
 </head>
     <header>
@@ -13,7 +15,7 @@
         <nav>
             <div id="op-horizontalnav">
                 <div id="unfold" class="menu-button">Menu</a></div>
-                <ul id="menu" class="op-sectionlist row">
+                <ul id="menu" class="op-sectionlist row menu">
                     <li class="op-v-item"><a class="op-v-link" href="#profil">Profil</a></li>
                     <li class="op-v-item"><a class="op-v-link" href="#parcours">Parcours</a></li>
                     <li class="op-v-item"><a class="op-v-link" href="#competence">Compétences</a></li>
@@ -30,177 +32,190 @@
         </div>
         
         <div class="content">
-<div class="row">           
-<section id="profil" class="profil">
-<h1>Mon profil</h1>
-    <div class="sectprof">
+            <div class="row">           
+                <section id="profil" class="profil">
+                    <h1>Mon profil</h1>
+                        <div class="sectprof">
     
-        <h2>A propos de moi</h2>
-        <div class="col2"> 
-        <p>Je m’appelle Hélène KOCHER et je suis actuellement en première année de DUT Métiers du Multimédia et de l’Internet à Haguenau. </br>
-        Cette formation pluridisciplinaire m'a permis d’acquérir et d’élargir mes compétences dans divers secteurs comme l’infographie, la communication ou bien le développement web.</br>
-    Passionnée par les métiers de la communication et principalement la communication écrite et visuelle je souhaiterai continuer mon cursus dans ce domaine.</br>
-Créative, flexible j’aime travailler seul ou en équipe.</br>
-            Pour en savoir plus sur moi je vous invite a continuer votre visite...</br>
-        </p></div>
-        <button class="telechargement"><a href="telechargemnt/CV_KOCHER_Helene.pdf" target="_blank"><div class="tele"><p>Télécharger mon CV</p></div></a></button>
+                        <h2>A propos de moi</h2>
+                            
+                        <div class="col2"> 
+                            <p>Je m’appelle Hélène KOCHER et je suis actuellement en première année de DUT Métiers du Multimédia et de l’Internet à Haguenau. </br>Cette formation pluridisciplinaire m'a permis d’acquérir et d’élargir mes compétences dans divers secteurs comme l’infographie, la communication ou bien le développement web.</br>Passionnée par les métiers de la communication et principalement la communication écrite et visuelle je souhaiterai continuer mon cursus dans ce domaine.</br>
+Créative, flexible j’aime travailler seul ou en équipe.</br>Pour en savoir plus sur moi je vous invite a continuer votre visite...</br></p>
+                        </div>
+
+                        <button class="telechargement">
+                            <a href="telechargemnt/CV_KOCHER_Helene.pdf" target="_blank">
+                                <div class="tele">
+                                    <p>Télécharger mon CV</p>
+                                </div>
+                            </a>
+                        </button>
     
-    <div class="col1">
-        <div class="moi">
-        </div>
-    </div>
-        </div>
-</section>
-    </div> 
+                            <div class="col1">
+                                <div class="moi"></div>
+                            </div>
+                        </div>
+                </section>
+            </div> 
 
-<div class="row">          
-<section id="parcours" class="parcours">
-<h1>Mon parcours</h1>
-        <div class="ecole">
-            <div class="bac"><h2>2015</h2><p>Obtention du Bac Science Technologique du Management et de la Gestion mention Bien </br></br><span>Apprentissage des notions de base en  management des organisations, gestion, marketing, économie et droit</span></p></div> 
+            <div class="row">          
+                <section id="parcours" class="parcours">
+                    <h1>Mon parcours</h1>
+                        <div class="ecole">
+                            <div class="bac">
+                                <h2>2015</h2>
+                                <p>Obtention du Bac Science Technologique du Management et de la Gestion mention Bien </br></br>
+                                <span>Apprentissage des notions de base en  management des organisations, gestion, marketing, économie et droit</span></p>
+                            </div> 
 
-<div class="trait"></div>
+                            <div class="trait"></div>
 
-        <div class="dut">
-        <h2>2016</h2><p>Préparation d'un DUT Métier du Multimédia et de l'Internet</br></br><span>Formations aux différents métiers du web à l'IUT de Haguenau</span></p></div> 
-   </div>
-</div>
+                            <div class="dut">
+                                <h2>2016</h2>
+                                <p>Préparation d'un DUT Métier du Multimédia et de l'Internet</br></br>
+                                <span>Formations aux différents métiers du web à l'IUT de Haguenau</span></p></div> 
+                        </div>
+            </div>
    
-</section>
-</div>
+                </section>
+            </div>
             
-<div class="row">
-<section id="competence" class="competence">
-<h1>Mes compétences</h1>
-    <div class="savoir">
-    <div class="comp">
-        <div class="col2"><div class="comm"><p>Connaissance des stratégies de communications</p></div></div>
-        <div class="col2"><div class="ref"><p>De bonne connaissance dans l'écriture des médias</p></div></div>
-        <div class="col2"><div class="grap"><p>Maîtrise des logiciels Adobe</br> (Illustrator, Photoshop,...)</p></div></div>
-    <div class="bas">
-        <div class="col2"><div class="html"><p>Maîtrise du langage HTML et CSS</p></div></div>
-        <div class="col2"><div class="prj"><p>De bonne connaissance en gestion de projet</p></div></div>
-    </div>
-    </div>
-    </div>
-</div>
-</section>
-</div>
-
-<div class="row">
-<section id="portfolio" class="portfolio">
-<h1>Mon portfolio</h1>
-    <div class="port">
-        <a href="telechargemnt/ART2_KOCHER_Helene_Porte_ouverte.pdf" target="_blank">
-    <div class="col3">
-            <div class="ch-item ch-img-1">
-        <div class="ch-info">
-            <h3> Porte Ouverte </h3>
-            <p> Travail sur un affiche Porte ouverte IUT de Haguenau sur le style de David Carson </br></br> Voir plus</p>
-        </div>
-    </div>
-    </a></div>
-    
-<div class="col3">
-    <a href="telechargemnt/CREA1_TP2_KOCHER.pdf" target="_blank">
-        <div class="ch-item ch-img-2">
-            <div class="ch-info">
-                <h3>Eatchxother</h3>
-                <p>Réalisation d'un montage de trois images avec détourage précis </br></br> Voir plus</p>
+            <div class="row">
+                <section id="competence" class="competence">
+                    <h1>Mes compétences</h1>
+                        <div class="savoir">
+                        <div class="comp">
+                            <div class="col2"><div class="comm"><p>Connaissance des stratégies de communications</p></div></div>
+                            <div class="col2"><div class="ref"><p>De bonne connaissance dans l'écriture des médias</p></div></div>
+                            <div class="col2"><div class="grap"><p>Maîtrise des logiciels Adobe</br> (Illustrator, Photoshop,...)</p></div></div>
+                        <div class="bas">
+                            <div class="col2"><div class="html"><p>Maîtrise du langage HTML et CSS</p></div></div>
+                            <div class="col2"><div class="prj"><p>De bonne connaissance en gestion de projet</p></div></div>
+                        </div>
+                        </div>
+                        </div>
             </div>
-        </div>
-</a></div>
-    
-<div class="col3">
-    <a href="telechargemnt/Museum_week_KOCHER_H%C3%A9l%C3%A8ne.pdf" target="_blank">
-        <div class="ch-item ch-img-3">
-            <div class="ch-info">
-                <h3>Museum Week</h3>
-                <p>Rédaction d'un article web sur la museum week</br></br> Voir plus</p>
+                </section>
             </div>
-        </div>
-</a></div>
+
+            <div class="row">
+                <section id="portfolio" class="portfolio">
+                    <h1>Mon portfolio</h1>
+                        <div class="port">
+                            <a href="telechargemnt/ART2_KOCHER_Helene_Porte_ouverte.pdf" target="_blank">
+                                    <div class="col3">
+                                        <div class="ch-item ch-img-1">
+                                            <div class="ch-info">
+                                                <h3> Porte Ouverte </h3>
+                                                    <p> Travail sur un affiche Porte ouverte IUT de Haguenau sur le style de David Carson </br></br> Voir plus</p>
+                                            </div>
+                                        </div>
+                            </a>
+                                    </div>
+
+                    <div class="col3">
+                        <a href="telechargemnt/CREA1_TP2_KOCHER.pdf" target="_blank">
+                            <div class="ch-item ch-img-2">
+                                <div class="ch-info">
+                                    <h3>Eatchxother</h3>
+                                        <p>Réalisation d'un montage de trois images avec détourage précis </br></br> Voir plus</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col3">
+                        <a href="telechargemnt/Museum_week_KOCHER_H%C3%A9l%C3%A8ne.pdf" target="_blank">
+                            <div class="ch-item ch-img-3">
+                                <div class="ch-info">
+                                    <h3>Museum Week</h3>
+                                        <p>Rédaction d'un article web sur la museum week</br></br> Voir plus</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
 
-<div class="col3">
-    <a href="telechargemnt/logo_final_fablab_cs5.pdf" target="_blank">
-        <div class="ch-item ch-img-4">
-            <div class="ch-info">
-                <h3>Logo Pic<sup>3</sup>Lab</h3>
-                <p> Travail de réalisation d'un logo pour le Fablab de Colmar</br></br> Voir plus</p>
+                    <div class="col3">
+                        <a href="telechargemnt/logo_final_fablab_cs5.pdf" target="_blank">
+                            <div class="ch-item ch-img-4">
+                                <div class="ch-info">
+                                    <h3>Logo Pic<sup>3</sup>Lab</h3>
+                                        <p> Travail de réalisation d'un logo pour le Fablab de Colmar</br></br> Voir plus</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col3">
+                        <a href="telechargemnt/CREA2_TP9_KOCHERHelene.pdf" target="_blank">
+                            <div class="ch-item ch-img-5">
+                                <div class="ch-info">
+                                    <h3>Maquette du site Pic<sup>3</sup>Lab</h3>
+                                    <p>Travail de réalisation de la maquette du site du Fablab de Colmar</br></br> Voir plus</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col3">
+                        <a href="telechargemnt/picto_Kocher_Helene.pdf" target="_blank">
+                                <div class="ch-item ch-img-6">
+                                    <div class="ch-info">
+                                        <h3>Pictogramme</h3>
+                                            <p>Réalisation de pictogramme pour smartphone ou tablette</br></br> Voir plus</p>
+                                    </div>
+                                </div>
+                        </a>
+                    </div>
+                        </div>
+
+                </section>
+
+            <div class="row">
+                <section id="contact" class="contact">
+                    <h1>Contact<h1>
+    
+                        <div class="form">
+                            <div class="col3">
+
+                            <div class="cadre">
+                                <textarea  class="form-control" id="name" name="name" placeholder="Nom" ></textarea>
+                            </div>
+
+                            <div class="cadre">
+                                <textarea class="form-control" id="email" name="email" placeholder="Prenom"></textarea>
+                            </div>
+
+                            <div class="mess">
+                                <textarea class="form-control" rows="4" name="message" placeholder="Votre message"></textarea>
+                            </div>
+
+                                <button id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary">Envoyer</button>
+                            </div>
+                        </div>
+    
+            <div class="col2">
+                <div class="coordonee">
+                    <div class="image">
+                        <div class="bonhomme"></div>
+                        <div class="localisation"></div>
+                        <div class="telephone"></div>
+                        <div class="enveloppe"></div>
+                    </div>
+    
+                    <div class="coord">
+                        <p>Hélène KOCHER</p>
+                        <p>18 rue des pierres</br>67620 Soufflenheim</p>
+                        <p>06.36.31.95.96</p> 
+                        <p>helene.kocher@orange.fr</p>
+                    </div>
+                </div>
             </div>
-        </div>
-</a></div>
 
-<div class="col3">
-    <a href="telechargemnt/CREA2_TP9_KOCHERHelene.pdf" target="_blank">
-        <div class="ch-item ch-img-5">
-            <div class="ch-info">
-                <h3>Maquette du site Pic<sup>3</sup>Lab</h3>
-                <p>Travail de réalisation de la maquette du site du Fablab de Colmar</br></br> Voir plus</p>
+                </section>
             </div>
-        </div>
-</a></div>
-
-<div class="col3">
-    <a href="telechargemnt/picto_Kocher_Helene.pdf" target="_blank">
-            <div class="ch-item ch-img-6">
-            <div class="ch-info">
-                <h3>Pictogramme</h3>
-                <p>Réalisation de pictogramme pour smartphone ou tablette</br></br> Voir plus</p>
-            </div>
-        </div>
-</a></div>
-    </div>
-    
-</section>
-<div class="row">
-
-<div class="row">
-<section id="contact" class="contact">
-<h1>Contact<h1>
-    
-    <div class="form">
-        <div class="col3">
-            
-		<div class="cadre">
-			<textarea  class="form-control" id="name" name="name" placeholder="Nom" ></textarea>
-		</div>
-    
-		<div class="cadre">
-			<textarea class="form-control" id="email" name="email" placeholder="Prenom"></textarea>
-	   </div>
-
-		<div class="mess">
-			<textarea class="form-control" rows="4" name="message" placeholder="Votre message"></textarea>
-		</div>
-    
-            <button id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary">Envoyer</button>
-        </div>
-        </div>
-    
-    <div class="col2">
-        <div class="coordonee">
-            <div class="image">
-                <div class="bonhomme"></div>
-                <div class="localisation"></div>
-                <div class="telephone"></div>
-                <div class="enveloppe"></div>
-            </div>
-    
-            <div class="coord">
-                <p>Hélène KOCHER</p>
-                <p>18 rue des pierres</br>67620 Soufflenheim</p>
-                <p>06.36.31.95.96</p> 
-                <p>helene.kocher@orange.fr</p>
-            </div>
-        </div>
-    </div>
-
-</section>
-</div>
-    <script src="./JS/jquery-2.2.3.min.js"></script>
-    <script src="./JS/main.js"></script>
     </body>
 </html>
 

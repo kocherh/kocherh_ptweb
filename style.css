@@ -9,8 +9,8 @@ body
 
 }
 
-/*  Header  */
-.one
+/************************  Header *********************** */
+.one /* Photo*/
 { 
     width: 100%;
     height: 1000px;
@@ -28,7 +28,14 @@ body
     margin-top: -10px;
 }
 
-section h1 {text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-size: 35px;}
+
+/****************************************Titre************************************/
+
+
+section h1 
+{
+    text-align:center; color:#333; margin:0 auto;padding-top: 1%; font-size: 35px;
+}
 .profil  h1
 {
     text-align: right;
@@ -38,23 +45,50 @@ h2
     color: rgb(131 ,119, 137);
     font-size: 30px;
 }
-.col2 p
-{
-    float: left;
-    text-align: justify;
-    line-height: normal;
-    width: 400px;
-}
+
 /*  Menu  */
 
-#op-horizontalnav {background:#fff; position:fixed; top:0; right:0; left:0;z-index: 1;display: block;}
-#op-horizontalnav .op-sectionlist {width:100%; max-width:1280px; margin:auto;padding:0; text-align:center; display:table;}
-#op-horizontalnav .op-v-item {list-style:none; display:table-cell;font-size:20px;}
-#op-horizontalnav .op-v-item .op-v-link {color:rgb(131 ,119, 137); padding:16px 8px;display:block;text-decoration:none;}
-#op-horizontalnav .op-v-item .op-v-link:hover, #op-horizontalnav .op-v-link.active {background-color:rgb(131 ,119, 137);color:#fff;}
+#op-horizontalnav 
+{
+    background:#fff; 
+    position:fixed; 
+    top:0; right:0; 
+    left:0;
+    z-index: 1;
+    display: block;
+    display:inline-flex;
+}
+#op-horizontalnav .op-sectionlist
+{
+    width:100%;
+    max-width:1280px;
+    margin:auto;
+    padding:0;
+    text-align:center;
+    display:table;
+}
+#op-horizontalnav .op-v-item 
+{
+    list-style:none;
+    display:table-cell;
+    font-size:20px;
+}
+#op-horizontalnav .op-v-item .op-v-link 
+{
+    color:rgb(131 ,119, 137);
+    padding:16px 8px;
+    display:block;
+    text-decoration:none;
+}
+#op-horizontalnav .op-v-item .op-v-link:hover, #op-horizontalnav .op-v-link.active 
+{
+    background-color:rgb(131 ,119, 137);
+    color:#fff;
+}
 
-/*  Profil  */
-    /*  Photo  */
+/********************************************************  Profil  ******************************************************************/
+   
+    /***  Photo  ***/
 .moi
 {
     background-image: url(image/rond-03.png);
@@ -66,14 +100,22 @@ h2
     margin-right: auto;
 }
 
-    /*  Text  */
-.profil
+    /*** Text  ***/
+.col2 p
+{
+    float: left;
+    text-align: justify;
+    line-height: normal;
+    width: 400px;
+}
+
+.profil /*Partie profil*/
 {
     height:530px;
      background-color: rgb(252, 251, 253);  
 }
 
-.sectprof
+.sectprof /*Ensemble du corp*/
 {
     margin-left: auto;
     margin-right: auto;
@@ -82,9 +124,9 @@ h2
     
 }
 
-    /*  Bouton téléchargement CV   */
+    /***  Bouton téléchargement CV   ***/
 
-.tele
+.tele /* Icone téléchargement*/
 {
     background-image: url(image/telecharger_cv-02.png);
     width: 30px;
@@ -93,21 +135,22 @@ h2
     margin-left: 20px;
     margin-bottom: 2px;
 }
-.tele p
+.tele p /* Texte téléchargement */
 {
     width: 150px;
     margin-left: 50px;
     margin-top: 5px;
     color: black;
 }
-.telechargement
+.telechargement /* Bouton de téléchargement*/
 {
     width: 250px;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     margin-top: 300px;
-    padding: 10px 0 10px 0
+    padding: 10px 0 10px 0;
+    float: left;
 }
 .telechargement a
 {
@@ -115,14 +158,15 @@ h2
 }
 
 /*  Parcours  */
-.ecole
+
+.ecole /* Ensemble du corp */
 {
     margin-left: auto;
     margin-right: auto;
     width: 960px;
     height: 500px;
 }
-.parcours
+.parcours /* Partie profil */
 {
     background-color: rgb(182 , 165, 189);
     height: 600px;
@@ -131,15 +175,15 @@ h2
     text-align: center;
     line-height: normal;
 }
-.parcours h2
+.parcours h2 /* Année */
 {
     text-align: center;
 }
-.parcours span
+.parcours span /* Déscription de se que j'ai fait pendant ses années */
 {
     font-size: 13px;
 }
-.trait
+.trait /* Barre qui sépare les deux formations*/
 {
     height: 450px;
     width: 0px;
@@ -148,7 +192,7 @@ h2
     margin-left: auto;
     margin-right: auto;
 }
-.dut 
+.dut /* Partie dut */
 {
     border : 2px rgb(131 ,119, 137) solid;
     width: 400px;
@@ -159,7 +203,7 @@ h2
     float: left;
     margin-top: -200px
 }
-.bac
+.bac /* Partie bac */ 
 {
     border : 2px rgb(131 ,119, 137) solid;
     width: 400px;
@@ -168,16 +212,16 @@ h2
     float: right;
 }
 
-/*  Competence  */
+/*************************************************  Competence  *****************************************/
 
-.competence
+.competence /* Partie compétence */
 {
     background-color: rgb(198 , 179, 204);
     height: 600px;
     position: relative;
     display: block;
 }
-.savoir
+.savoir /* Bloc des différente compétence */
 {
     margin-left: auto;
     margin-right: auto;
@@ -185,7 +229,7 @@ h2
     height: 500px;
 }
 
-.comp
+.comp /* 3 premier compétence placer en haut */
 {
     margin-left: auto;
     margin-right: auto;
@@ -193,30 +237,30 @@ h2
     width: 960px;
     text-align: center;
 }
-.comp p 
+.comp p /* Texte des compétences */
 {
     text-align: center;
     margin-top: 110%;
     width: 150px;
 }
-.bas
+.bas /* 2 dernière compétence placer en bas */
 {
     position: absolute;
     top: 350px;
     margin-left: auto;
     margin-right: auto;
     width: 960px;
-    padding-left: 90px;
+    padding-left: 100px;
 
 }
-.bas p
+.bas p /* Texte des compétences */
 {
     text-align: center;
     margin-top: 110%;
     width: 150px;
 
 }
-.comm
+.comm /* Icone  communication */
 {
     background-image: url(image/comm-02.png);
     width: 150px;
@@ -225,7 +269,7 @@ h2
     margin-left: auto;
     margin-right: auto;
 }
-.ref
+.ref /* Icone  référencement */
 {
     background-image: url(image/referencement-03.png);
     width: 150px;
@@ -234,7 +278,7 @@ h2
     margin-left: auto;
     margin-right: auto;
 }
-.grap
+.grap /* Icone  graphisme */
 {
         background-image: url(image/graphisme-04.png);
     width: 150px;
@@ -243,7 +287,7 @@ h2
     margin-left: auto;
     margin-right: auto;
 }
-.html
+.html /* Icone  html */
 {
         background-image: url(image/html-05.png);
     width: 150px;
@@ -253,7 +297,7 @@ h2
     margin-right: auto;
     float: right;
 }
-.prj
+.prj /* Icone  projet */
 {
      background-image: url(image/projet-06.png);
     width: 150px;
@@ -264,16 +308,16 @@ h2
     float: right;
 }
 
-/*  Portfolio  */
+/************************************************** Portfolio *********************************************************/
 
-.portfolio
+.portfolio /* Partie portfolio */
 {
     background-color: rgb(213 , 193, 220);
     height: 1150px;
     display: block,
 }
 
-.port
+.port /* Bloc portfolio */
 {
     margin-left: auto;
     margin-right: auto;
@@ -282,13 +326,13 @@ h2
     margin-top: 2%;
 }
 
-/* Effet sur les images du portfolio */
+/********* Effet sur les images du portfolio ***************/
+
 .ch-item {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 	position: relative;
-	cursor: default;
 	box-shadow: 
 inset 0 0 0 16px rgba(255,255,255,0.6),
 		0 1px 2px rgba(0,0,0,0.1);
@@ -299,44 +343,51 @@ inset 0 0 0 16px rgba(255,255,255,0.6),
     cursor: pointer;
 }
 
-.ch-img-1 { 
+.ch-img-1 /* Image porte ouverte */
+{ 
 	background-image:url(telechargemnt/ART2_KOCHER_Helene_Porte_ouverte-02-01.png);
     height: 300px;
     width: 450px;
 
 }
-.ch-img-2 { 
+.ch-img-2 /* Image eatchxother */
+{ 
 	background-image:url(telechargemnt/CREA1_TP2_KOCHER-02.png);
     height: 300px;
     width: 450px;
   
 }
-.ch-img-3 { 
+.ch-img-3 /* Texte muséum week */
+{ 
 	background-image:url(telechargemnt/museum_week_KOCHER_H%C3%A9l%C3%A8ne-03.PNG);
     height: 300px;
     width: 450px;
     content: cover;
 }
-.ch-img-4 { 
+.ch-img-4 /* Image Fab Lab */
+{ 
 	background-image:url(telechargemnt/logo_final_fablab_cs5-01.png);
     height: 300px;
     width: 450px;
 
 }
-.ch-img-5 { 
+.ch-img-5 /* Maquette Fab Lab */
+{ 
 	background-image:url(telechargemnt/maquette_site_Kocher_Helene-04.png);
     height: 300px;
     width: 450px;
     content: cover;
 }
-.ch-img-6 { 
+.ch-img-6 /* Icone téléphone */
+{ 
 	background-image:url(telechargemnt/picto_Kocher_Helene-05.png);
     height: 300px;
     width: 450px;
     content: cover;
 }
 
-.ch-info {
+.ch-info  
+{
 	position: absolute;
 	background: rgba(131 ,119, 137,0.8);
 	width: inherit;
@@ -349,7 +400,8 @@ inset 0 0 0 16px rgba(255,255,255,0.6),
     margin: 0 auto;
 }
 
-.ch-info h3 {
+.ch-info h3 /* Titre de l'image */
+{
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -363,7 +415,8 @@ inset 0 0 0 16px rgba(255,255,255,0.6),
 		0 1px 2px rgba(0,0,0,0.3);
 }
 
-.ch-info p {
+.ch-info p /* Texte explicatif  */
+{
 	color: #fff;
 	padding: 10px 0px;
 	font-style: italic;
@@ -374,7 +427,8 @@ inset 0 0 0 16px rgba(255,255,255,0.6),
 	transition: all 1s ease-in-out 0.4s;
 }
 
-.ch-info p a {
+.ch-info p a 
+{
 	display: block;
 	color: rgba(255,255,255,0.7);
 	font-style: normal;
@@ -386,27 +440,31 @@ inset 0 0 0 16px rgba(255,255,255,0.6),
 	font-family: 'Open Sans', Arial, sans-serif;
 }
 
-.ch-info p a:hover {
+.ch-info p a:hover 
+{
 	color: rgba(255,242,34, 0.8);
 }
 
-.ch-item:hover {
+.ch-item:hover 
+{
 	box-shadow: 
 		inset 0 0 0 1px rgba(255,255,255,0.1),
 		0 1px 2px rgba(0,0,0,0.1);
 }
-.ch-item:hover .ch-info {
+.ch-item:hover .ch-info 
+{
 	transform: scale(1);
 	opacity: 1;
 }
 
-.ch-item:hover .ch-info p {
+.ch-item:hover .ch-info p 
+{
 	opacity: 1;
 }
 
-/* Contact  */
+/********************************************* Contact  ************************************************************/
 
-/*Formulaire de contact */
+/**********Formulaire de contact *****************/
 
 .form
 {
@@ -414,7 +472,7 @@ inset 0 0 0 16px rgba(255,255,255,0.6),
     margin-top: 2%;
     
 }
-.form-control
+.form-control  /* Champs */
 {
  border-radius: 4px;
     border-color: rgb(131 ,119, 137);
@@ -459,12 +517,12 @@ button
     height: auto;
     margin: 0 auto;
 }
-.coordonee
+.coordonee  /* Bloc coordonée */
 {
     float: left;
     
 }
-.coordonee p
+.coordonee p  /* Texte coordonée */
 {
     font-size: 15px;
     display: block;
@@ -479,13 +537,13 @@ button
     margin-top: 20px;
     width: 200px;
 }
-.image
+.image  /* Image coordonée */
 {
     float: left;
     margin-top: 2%;
 }
 
-.bonhomme
+.bonhomme  /* Image nom/prenom */
 {
     background-image: url(image/profil-02.png);
     width: 17px;
@@ -495,7 +553,7 @@ button
    
 }
 
-.localisation
+.localisation /* Image adresse  */
 {
     background-image: url(image/adresse-03.png);
     width: 17px;
@@ -505,7 +563,7 @@ button
     
 }
 
-.telephone
+.telephone /* Image numéro de tel */
 {
     background-image: url(image/telephone-04.png);
     width: 17px;
@@ -515,7 +573,7 @@ button
     
 }
 
-.enveloppe
+.enveloppe /* Image email  */
 {
     background-image: url(image/mail-05.png);
     width: 30px;
@@ -525,7 +583,7 @@ button
 }
 
 
-/* Media query*/
+/*************************************************** Media query *************************************************/
 
 .menu-button
 {
@@ -534,28 +592,59 @@ button
 
 @media(max-width: 400px)
 {
+    .nav
+    {
+        display: none;
+    }
     body
     {
         width: 400px;
     }
+    
+    
+                        nav ul{
+                            display:block;
+                            visibility: hidden;
+                            transition: visibility 0s, opacity 0.5s linear;
+                        }
+
+                        nav ul li:hover{
+                            cursor:pointer;
+                        }
+                        
+                        nav:hover ul{
+                        visibility:visible;
+                        opacity: 1;
+                        }
+
+    
     .nav ul
     {
         height: 0;
         overflow: hidden;
         transition: height 0.5s;
     }
-#op-horizontalnav {display: block;}
-#op-horizontalnav .op-sectionlist {display:table;}
-#op-horizontalnav .op-v-item {display:list-item;}
-#op-horizontalnav .op-v-item .op-v-link {display:block;}
+    #op-horizontalnav 
+    {
+        display: block;
+    }
+    #op-horizontalnav .op-sectionlist 
+    {
+        display:table;
+    }
+    #op-horizontalnav .op-v-item 
+    {
+        display:list-item;
+    }
+    #op-horizontalnav .op-v-item .op-v-link 
+    {
+        display:block;
+    }
+    
     nav ul.open
     {
         height: 12em;
         
-    }
-    header h1
-    {
-        display: none;
     }
     .menu-button
     {
@@ -565,6 +654,7 @@ button
         display: block;
         text-align: center;
         text-decoration: none;
+        cursor: pointer;
     }
     .one p
     {
@@ -668,7 +758,7 @@ button
     {
         width: 300px;
         float: left;
-        margin-left: -75px;
+        margin-left: -170px;
         margin-top: 480px;
     }
     .prj
@@ -735,5 +825,9 @@ button
     .port
     {
         width: 400px;
+    }
+    .profil  h1
+    {
+        text-align: center;
     }
 }
